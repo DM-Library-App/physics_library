@@ -1,0 +1,7 @@
+<resources>
+
+	<string name="app_name">물리학과 도서관</string>
+	<string name="title_activity_splash">SplashActivity</string>
+	<string name="action_settings">설정</string>
+
+</resources>

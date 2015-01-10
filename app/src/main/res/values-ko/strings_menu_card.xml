@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="board">게시판</string>
+	<string name="library_services">도서관 서비스</string>
+	<string name="my_page">내 정보</string>
+
+</resources>

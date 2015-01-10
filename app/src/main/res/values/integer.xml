@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="changing_activity_delay_time">1000</integer>
+	<integer name="changing_activity_anim_time">500</integer>
+</resources>

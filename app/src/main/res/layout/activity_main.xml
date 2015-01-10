@@ -1,0 +1,37 @@
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context="kr.ac.uos.sscc.ck.physicslibrary.MainActivity"
+		android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:minHeight="?attr/actionBarSize"
+		android:background="@color/blue"
+		app:theme="@style/ActionbarStyle"
+		app:popupTheme="@style/Theme.AppCompat.Light"/>
+
+	<LinearLayout
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:paddingRight="@dimen/activity_horizontal_margin"
+		android:paddingTop="@dimen/activity_vertical_margin"
+		android:layout_width="match_parent"
+		android:layout_height="0px"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:id="@+id/main_layout">
+
+
+	</LinearLayout>
+
+</LinearLayout>
+
+
+
+
