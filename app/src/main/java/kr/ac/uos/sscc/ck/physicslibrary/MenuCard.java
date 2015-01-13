@@ -5,10 +5,12 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -60,6 +62,22 @@ public class MenuCard extends Fragment {
 							 Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
 		CardView cv = (CardView) inflater.inflate(R.layout.fragment_menu_card, container, false);
+
+		cv.setOnTouchListener(new View.OnTouchListener() {
+			private Toast toast = null;
+
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				if (toast == null) {
+					toast = Toast.makeText(getActivity(), "touched" + mDescription, Toast.LENGTH_SHORT);
+					toast.show();
+				}
+
+				toast.show();
+
+				return false;
+			}
+		});
 
 		ImageView iv = (ImageView) cv.findViewById(R.id.card_img);
 		iv.setImageResource(mImgResID);
